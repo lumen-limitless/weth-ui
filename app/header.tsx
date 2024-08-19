@@ -1,5 +1,7 @@
 'use client';
 
+import { ConnectButton } from '@rainbow-me/rainbowkit';
+
 export default function Header() {
   return (
     <header
@@ -8,6 +10,7 @@ export default function Header() {
     >
       <div className="flex w-full justify-between">
         <object data="/vercel.svg" width={100} height={24} />
+        <ConnectButton />
       </div>
     </header>
   );

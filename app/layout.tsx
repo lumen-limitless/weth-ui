@@ -1,15 +1,18 @@
+import '@rainbow-me/rainbowkit/styles.css';
+
 import Footer from '@/app/footer';
 import Header from '@/app/header';
 import Main from '@/app/main';
 import { cn } from '@/lib/utils';
 import { Viewport } from 'next';
-import { Roboto } from 'next/font/google';
+import { Kode_Mono } from 'next/font/google';
 import './globals.css';
 import { defaultMetadata } from './metadata';
+import Providers from './providers';
 
-const roboto = Roboto({
+const kodemono = Kode_Mono({
   subsets: ['latin'],
-  weight: ['400', '500', '700'],
+  weight: 'variable',
 });
 
 export const metadata = defaultMetadata;
@@ -35,26 +38,28 @@ export default function RootLayout({
           textRendering: 'optimizeLegibility',
         }}
         className={cn(
-          roboto.className,
+          kodemono.className,
           'flex min-h-screen touch-manipulation flex-col antialiased',
         )}
       >
-        <a
-          href="#main"
-          className="sr-only absolute left-[-999px] top-[-999px] block border bg-[#ffc] text-black focus:not-sr-only focus:bottom-0 focus:top-0 focus:border-[#990000]"
-          aria-label="skip"
-          id="skip"
-        >
-          Skip Content
-        </a>
+        <Providers>
+          <a
+            href="#main"
+            className="sr-only absolute left-[-999px] top-[-999px] block border bg-[#ffc] text-black focus:not-sr-only focus:bottom-0 focus:top-0 focus:border-[#990000]"
+            aria-label="skip"
+            id="skip"
+          >
+            Skip Content
+          </a>
 
-        <Header />
+          <Header />
 
-        <Main>{children}</Main>
+          <Main>{children}</Main>
 
-        <Footer />
+          <Footer />
 
-        <TailwindIndicator />
+          <TailwindIndicator />
+        </Providers>
       </body>
     </html>
   );

@@ -1,3 +1,5 @@
+import { WETH } from '@/components/weth';
+
 interface PageProps {
   params: {};
   searchParams: Record<string, string | string[] | undefined>;
@@ -5,13 +7,12 @@ interface PageProps {
 
 export default function Page({}: PageProps) {
   return (
-    <div className="flex h-full w-full flex-grow flex-col items-center justify-center gap-12">
-      <object
-        data="/next.svg"
-        width={200}
-        height={48}
-        className="animate-pulse"
-      />
-    </div>
+    <>
+      <section className="h-full py-10">
+        <div className="container">
+          <WETH />
+        </div>
+      </section>
+    </>
   );
 }
