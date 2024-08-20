@@ -1,5 +1,6 @@
 'use client';
 
+import { ModeToggle } from '@/components/mode-toggle';
 import { Skeleton } from '@/components/ui/skeleton';
 import { Box, Fuel } from 'lucide-react';
 import { formatGwei } from 'viem';
@@ -11,7 +12,7 @@ export default function Footer() {
   return (
     <footer
       id="footer"
-      className="flex h-16 items-center justify-center gap-5 border-t px-5"
+      className="flex flex-col items-center justify-center gap-5 border-t p-1 px-5 lg:flex-row"
     >
       <div className="flex">
         <Box className="mr-1" />{' '}
@@ -25,6 +26,7 @@ export default function Footer() {
           <Skeleton className="h-6 w-16" />
         )}
       </div>
+      <ModeToggle />
     </footer>
   );
 }

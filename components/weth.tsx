@@ -1,4 +1,6 @@
 'use client';
+import Image from 'next/image';
+import wethImg from 'public/weth.png';
 import { useState } from 'react';
 import { formatEther, parseEther } from 'viem';
 import {
@@ -14,6 +16,7 @@ import {
 } from '../lib/wagmi';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
+import { Skeleton } from './ui/skeleton';
 
 export const WETH = () => {
   const [amount, setAmount] = useState('');
@@ -26,7 +29,7 @@ export const WETH = () => {
 
   const { data: wethBalance } = useBalance({
     address,
-    token: weth9Address[1],
+    token: weth9Address[chainId as 1],
   });
 
   const {
@@ -67,15 +70,28 @@ export const WETH = () => {
 
   return (
     <div className="flex flex-col items-center gap-4">
+      <Image src={wethImg} alt="WETH" height={25} />
+
       <h2 className="text-2xl font-bold">Wrap/Unwrap ETH</h2>
-      <div className="flex gap-4">
-        <p>
-          ETH Balance: {ethBalance ? formatEther(ethBalance.value) : '0'} ETH
-        </p>
-        <p>
-          WETH Balance: {wethBalance ? formatEther(wethBalance.value) : '0'}{' '}
-          WETH
-        </p>
+      <div className="flex flex-col gap-4 lg:flex-row">
+        <div className="flex items-center">
+          <span>ETH Balance: </span>
+          {ethBalance ? (
+            <span>{formatEther(ethBalance.value)}</span>
+          ) : (
+            <Skeleton className="mx-1 h-6 w-16" />
+          )}
+          <span> ETH</span>
+        </div>
+        <div className="flex items-center">
+          <span>WETH Balance: </span>
+          {wethBalance ? (
+            <span>{formatEther(wethBalance.value)}</span>
+          ) : (
+            <Skeleton className="mx-1 h-6 w-16" />
+          )}
+          <span> WETH</span>
+        </div>
       </div>
       <form onSubmit={handleSubmit} className="flex flex-col gap-2">
         <Input
