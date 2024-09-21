@@ -39,7 +39,7 @@ export default function RootLayout({
         }}
         className={cn(
           kodemono.className,
-          'flex min-h-screen touch-manipulation flex-col antialiased',
+          'min-h-screen touch-manipulation antialiased',
         )}
       >
         <Providers>
