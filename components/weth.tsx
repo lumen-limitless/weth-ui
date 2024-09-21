@@ -74,23 +74,23 @@ export const WETH = () => {
 
       <h2 className="text-2xl font-bold">Wrap/Unwrap ETH</h2>
       <div className="flex flex-col gap-4 lg:flex-row">
-        <div className="flex items-center">
-          <span>ETH Balance: </span>
+        <div className="flex items-center rounded border p-1">
           {ethBalance ? (
-            <span>{formatEther(ethBalance.value)}</span>
+            <span>
+              {Number(formatEther(ethBalance.value)).toFixed(3) + ' ETH'}
+            </span>
           ) : (
             <Skeleton className="mx-1 h-6 w-16" />
           )}
-          <span> ETH</span>
         </div>
-        <div className="flex items-center">
-          <span>WETH Balance: </span>
+        <div className="flex items-center rounded border p-1">
           {wethBalance ? (
-            <span>{formatEther(wethBalance.value)}</span>
+            <span>
+              {Number(formatEther(wethBalance.value)).toFixed(3) + ' WETH'}
+            </span>
           ) : (
             <Skeleton className="mx-1 h-6 w-16" />
           )}
-          <span> WETH</span>
         </div>
       </div>
       <form onSubmit={handleSubmit} className="flex flex-col gap-2">
@@ -104,7 +104,7 @@ export const WETH = () => {
         <Button
           type="submit"
           disabled={isWrapping || isWrapPending}
-          className="rounded bg-blue-500 p-2 text-white hover:bg-blue-600 disabled:bg-gray-400"
+          className="w-full"
         >
           {isWrapping || isWrapPending ? 'Wrapping...' : 'Wrap ETH'}
         </Button>
@@ -113,7 +113,7 @@ export const WETH = () => {
         <Button
           type="submit"
           disabled={isUnwrapping || isUnwrapPending}
-          className="rounded bg-green-500 p-2 text-white hover:bg-green-600 disabled:bg-gray-400"
+          className="w-full"
         >
           {isUnwrapping || isUnwrapPending ? 'Unwrapping...' : 'Unwrap WETH'}
         </Button>

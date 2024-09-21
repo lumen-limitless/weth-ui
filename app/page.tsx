@@ -8,10 +8,8 @@ interface PageProps {
 export default function Page({}: PageProps) {
   return (
     <>
-      <section className="h-full py-10">
-        <div className="container">
-          <WETH />
-        </div>
+      <section className="py-10">
+        <WETH />
       </section>
     </>
   );

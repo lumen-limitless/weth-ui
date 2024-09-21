@@ -1,7 +1,7 @@
 import { APP_DESCRIPTION } from '@/lib/constants';
 import { type Metadata } from 'next';
 
-const APP_NAME = process.env.NEXT_PUBLIC_APP_NAME || 'Next.js Starter';
+const APP_NAME = process.env.NEXT_PUBLIC_APP_NAME || 'WETH9 Interface';
 
 const baseUrl = new URL(
   process.env.NEXT_PUBLIC_APP_URL
