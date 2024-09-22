@@ -1,4 +1,5 @@
 import '@rainbow-me/rainbowkit/styles.css';
+import './globals.css';
 
 import Footer from '@/app/footer';
 import Header from '@/app/header';
@@ -6,7 +7,6 @@ import Main from '@/app/main';
 import { cn } from '@/lib/utils';
 import { Viewport } from 'next';
 import { Kode_Mono } from 'next/font/google';
-import './globals.css';
 import { defaultMetadata } from './metadata';
 import Providers from './providers';
 
@@ -39,27 +39,26 @@ export default function RootLayout({
         }}
         className={cn(
           kodemono.className,
-          'min-h-screen touch-manipulation antialiased',
+          'flex min-h-screen touch-manipulation flex-col antialiased',
         )}
       >
-        <Providers>
-          <a
-            href="#main"
-            className="sr-only absolute left-[-999px] top-[-999px] block border bg-[#ffc] text-black focus:not-sr-only focus:bottom-0 focus:top-0 focus:border-[#990000]"
-            aria-label="skip"
-            id="skip"
-          >
-            Skip Content
-          </a>
+        <a
+          href="#main"
+          className="sr-only absolute left-[-999px] top-[-999px] block border bg-[#ffc] text-black focus:not-sr-only focus:bottom-0 focus:top-0 focus:border-[#990000]"
+          aria-label="skip"
+          id="skip"
+        >
+          Skip Content
+        </a>
 
+        <Providers>
           <Header />
 
           <Main>{children}</Main>
 
           <Footer />
-
-          <TailwindIndicator />
         </Providers>
+        <TailwindIndicator />
       </body>
     </html>
   );
