@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import wethImg from 'public/weth.png';
 import { useState } from 'react';
-import { formatEther, parseEther } from 'viem';
+import { Address, formatEther, parseEther } from 'viem';
 import {
   useAccount,
   useBalance,
@@ -10,9 +10,9 @@ import {
   useWaitForTransactionReceipt,
 } from 'wagmi';
 import {
+  useReadWeth9BalanceOf,
   useWriteWeth9Deposit,
   useWriteWeth9Withdraw,
-  weth9Address,
 } from '../lib/wagmi';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
@@ -27,10 +27,11 @@ export const WETH = () => {
     address,
   });
 
-  const { data: wethBalance } = useBalance({
-    address,
-    token: weth9Address[chainId as 1],
-  });
+  const { data: wethBalance, status: wethBalanceStatus } =
+    useReadWeth9BalanceOf({
+      args: [address as Address],
+      chainId: chainId as 1,
+    });
 
   const {
     writeContract: wrap,
@@ -84,10 +85,8 @@ export const WETH = () => {
           )}
         </div>
         <div className="flex items-center rounded border p-1">
-          {wethBalance ? (
-            <span>
-              {Number(formatEther(wethBalance.value)).toFixed(3) + ' WETH'}
-            </span>
+          {wethBalanceStatus === 'success' ? (
+            <span>{Number(formatEther(wethBalance)).toFixed(3) + ' WETH'}</span>
           ) : (
             <Skeleton className="mx-1 h-6 w-16" />
           )}

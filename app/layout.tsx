@@ -18,7 +18,13 @@ const kodemono = Kode_Mono({
 export const metadata = defaultMetadata;
 
 export const viewport: Viewport = {
-  themeColor: '#FFFFFF',
+  themeColor: [
+    { media: '(prefers-color-scheme: dark)', color: '#000000' },
+    {
+      media: '(prefers-color-scheme: light)',
+      color: '#FFFFFF',
+    },
+  ],
 };
 
 export default function RootLayout({

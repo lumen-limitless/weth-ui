@@ -9,7 +9,7 @@ module.exports = {
     deviceSizes: undefined,
   },
 
-  webpack(config) {
+  webpack(config, { isServer }) {
     config.module.rules.push({
       test: /\.svg$/i,
       issuer: /\.[jt]sx?$/,
@@ -23,6 +23,13 @@ module.exports = {
         },
       ],
     });
+
+    if (!isServer) {
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        encoding: require.resolve('encoding'),
+      };
+    }
 
     return config;
   },

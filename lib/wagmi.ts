@@ -10,7 +10,11 @@ import {
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /**
- * [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Op Mainnet Optimism Explorer__](https://optimistic.etherscan.io/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Base Basescan__](https://basescan.org/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Arbitrum One Arbiscan__](https://arbiscan.io/address/0x82aF49447D8a07e3bd95BD0d56f35241523fBab1)
+ * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14)
  */
 export const weth9Abi = [
   {
@@ -167,14 +171,26 @@ export const weth9Abi = [
 ] as const
 
 /**
- * [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Op Mainnet Optimism Explorer__](https://optimistic.etherscan.io/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Base Basescan__](https://basescan.org/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Arbitrum One Arbiscan__](https://arbiscan.io/address/0x82aF49447D8a07e3bd95BD0d56f35241523fBab1)
+ * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14)
  */
 export const weth9Address = {
   1: '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
+  10: '0x4200000000000000000000000000000000000006',
+  8453: '0x4200000000000000000000000000000000000006',
+  42161: '0x82aF49447D8a07e3bd95BD0d56f35241523fBab1',
+  11155111: '0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14',
 } as const
 
 /**
- * [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Op Mainnet Optimism Explorer__](https://optimistic.etherscan.io/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Base Basescan__](https://basescan.org/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Arbitrum One Arbiscan__](https://arbiscan.io/address/0x82aF49447D8a07e3bd95BD0d56f35241523fBab1)
+ * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14)
  */
 export const weth9Config = { address: weth9Address, abi: weth9Abi } as const
 
@@ -185,7 +201,11 @@ export const weth9Config = { address: weth9Address, abi: weth9Abi } as const
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link weth9Abi}__
  *
- * [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Op Mainnet Optimism Explorer__](https://optimistic.etherscan.io/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Base Basescan__](https://basescan.org/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Arbitrum One Arbiscan__](https://arbiscan.io/address/0x82aF49447D8a07e3bd95BD0d56f35241523fBab1)
+ * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14)
  */
 export const useReadWeth9 = /*#__PURE__*/ createUseReadContract({
   abi: weth9Abi,
@@ -195,7 +215,11 @@ export const useReadWeth9 = /*#__PURE__*/ createUseReadContract({
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link weth9Abi}__ and `functionName` set to `"name"`
  *
- * [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Op Mainnet Optimism Explorer__](https://optimistic.etherscan.io/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Base Basescan__](https://basescan.org/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Arbitrum One Arbiscan__](https://arbiscan.io/address/0x82aF49447D8a07e3bd95BD0d56f35241523fBab1)
+ * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14)
  */
 export const useReadWeth9Name = /*#__PURE__*/ createUseReadContract({
   abi: weth9Abi,
@@ -206,7 +230,11 @@ export const useReadWeth9Name = /*#__PURE__*/ createUseReadContract({
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link weth9Abi}__ and `functionName` set to `"totalSupply"`
  *
- * [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Op Mainnet Optimism Explorer__](https://optimistic.etherscan.io/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Base Basescan__](https://basescan.org/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Arbitrum One Arbiscan__](https://arbiscan.io/address/0x82aF49447D8a07e3bd95BD0d56f35241523fBab1)
+ * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14)
  */
 export const useReadWeth9TotalSupply = /*#__PURE__*/ createUseReadContract({
   abi: weth9Abi,
@@ -217,7 +245,11 @@ export const useReadWeth9TotalSupply = /*#__PURE__*/ createUseReadContract({
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link weth9Abi}__ and `functionName` set to `"decimals"`
  *
- * [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Op Mainnet Optimism Explorer__](https://optimistic.etherscan.io/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Base Basescan__](https://basescan.org/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Arbitrum One Arbiscan__](https://arbiscan.io/address/0x82aF49447D8a07e3bd95BD0d56f35241523fBab1)
+ * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14)
  */
 export const useReadWeth9Decimals = /*#__PURE__*/ createUseReadContract({
   abi: weth9Abi,
@@ -228,7 +260,11 @@ export const useReadWeth9Decimals = /*#__PURE__*/ createUseReadContract({
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link weth9Abi}__ and `functionName` set to `"balanceOf"`
  *
- * [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Op Mainnet Optimism Explorer__](https://optimistic.etherscan.io/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Base Basescan__](https://basescan.org/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Arbitrum One Arbiscan__](https://arbiscan.io/address/0x82aF49447D8a07e3bd95BD0d56f35241523fBab1)
+ * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14)
  */
 export const useReadWeth9BalanceOf = /*#__PURE__*/ createUseReadContract({
   abi: weth9Abi,
@@ -239,7 +275,11 @@ export const useReadWeth9BalanceOf = /*#__PURE__*/ createUseReadContract({
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link weth9Abi}__ and `functionName` set to `"symbol"`
  *
- * [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Op Mainnet Optimism Explorer__](https://optimistic.etherscan.io/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Base Basescan__](https://basescan.org/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Arbitrum One Arbiscan__](https://arbiscan.io/address/0x82aF49447D8a07e3bd95BD0d56f35241523fBab1)
+ * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14)
  */
 export const useReadWeth9Symbol = /*#__PURE__*/ createUseReadContract({
   abi: weth9Abi,
@@ -250,7 +290,11 @@ export const useReadWeth9Symbol = /*#__PURE__*/ createUseReadContract({
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link weth9Abi}__ and `functionName` set to `"allowance"`
  *
- * [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Op Mainnet Optimism Explorer__](https://optimistic.etherscan.io/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Base Basescan__](https://basescan.org/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Arbitrum One Arbiscan__](https://arbiscan.io/address/0x82aF49447D8a07e3bd95BD0d56f35241523fBab1)
+ * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14)
  */
 export const useReadWeth9Allowance = /*#__PURE__*/ createUseReadContract({
   abi: weth9Abi,
@@ -261,7 +305,11 @@ export const useReadWeth9Allowance = /*#__PURE__*/ createUseReadContract({
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link weth9Abi}__
  *
- * [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Op Mainnet Optimism Explorer__](https://optimistic.etherscan.io/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Base Basescan__](https://basescan.org/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Arbitrum One Arbiscan__](https://arbiscan.io/address/0x82aF49447D8a07e3bd95BD0d56f35241523fBab1)
+ * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14)
  */
 export const useWriteWeth9 = /*#__PURE__*/ createUseWriteContract({
   abi: weth9Abi,
@@ -271,7 +319,11 @@ export const useWriteWeth9 = /*#__PURE__*/ createUseWriteContract({
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link weth9Abi}__ and `functionName` set to `"approve"`
  *
- * [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Op Mainnet Optimism Explorer__](https://optimistic.etherscan.io/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Base Basescan__](https://basescan.org/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Arbitrum One Arbiscan__](https://arbiscan.io/address/0x82aF49447D8a07e3bd95BD0d56f35241523fBab1)
+ * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14)
  */
 export const useWriteWeth9Approve = /*#__PURE__*/ createUseWriteContract({
   abi: weth9Abi,
@@ -282,7 +334,11 @@ export const useWriteWeth9Approve = /*#__PURE__*/ createUseWriteContract({
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link weth9Abi}__ and `functionName` set to `"transferFrom"`
  *
- * [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Op Mainnet Optimism Explorer__](https://optimistic.etherscan.io/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Base Basescan__](https://basescan.org/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Arbitrum One Arbiscan__](https://arbiscan.io/address/0x82aF49447D8a07e3bd95BD0d56f35241523fBab1)
+ * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14)
  */
 export const useWriteWeth9TransferFrom = /*#__PURE__*/ createUseWriteContract({
   abi: weth9Abi,
@@ -293,7 +349,11 @@ export const useWriteWeth9TransferFrom = /*#__PURE__*/ createUseWriteContract({
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link weth9Abi}__ and `functionName` set to `"withdraw"`
  *
- * [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Op Mainnet Optimism Explorer__](https://optimistic.etherscan.io/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Base Basescan__](https://basescan.org/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Arbitrum One Arbiscan__](https://arbiscan.io/address/0x82aF49447D8a07e3bd95BD0d56f35241523fBab1)
+ * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14)
  */
 export const useWriteWeth9Withdraw = /*#__PURE__*/ createUseWriteContract({
   abi: weth9Abi,
@@ -304,7 +364,11 @@ export const useWriteWeth9Withdraw = /*#__PURE__*/ createUseWriteContract({
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link weth9Abi}__ and `functionName` set to `"transfer"`
  *
- * [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Op Mainnet Optimism Explorer__](https://optimistic.etherscan.io/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Base Basescan__](https://basescan.org/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Arbitrum One Arbiscan__](https://arbiscan.io/address/0x82aF49447D8a07e3bd95BD0d56f35241523fBab1)
+ * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14)
  */
 export const useWriteWeth9Transfer = /*#__PURE__*/ createUseWriteContract({
   abi: weth9Abi,
@@ -315,7 +379,11 @@ export const useWriteWeth9Transfer = /*#__PURE__*/ createUseWriteContract({
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link weth9Abi}__ and `functionName` set to `"deposit"`
  *
- * [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Op Mainnet Optimism Explorer__](https://optimistic.etherscan.io/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Base Basescan__](https://basescan.org/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Arbitrum One Arbiscan__](https://arbiscan.io/address/0x82aF49447D8a07e3bd95BD0d56f35241523fBab1)
+ * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14)
  */
 export const useWriteWeth9Deposit = /*#__PURE__*/ createUseWriteContract({
   abi: weth9Abi,
@@ -326,7 +394,11 @@ export const useWriteWeth9Deposit = /*#__PURE__*/ createUseWriteContract({
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link weth9Abi}__
  *
- * [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Op Mainnet Optimism Explorer__](https://optimistic.etherscan.io/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Base Basescan__](https://basescan.org/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Arbitrum One Arbiscan__](https://arbiscan.io/address/0x82aF49447D8a07e3bd95BD0d56f35241523fBab1)
+ * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14)
  */
 export const useSimulateWeth9 = /*#__PURE__*/ createUseSimulateContract({
   abi: weth9Abi,
@@ -336,7 +408,11 @@ export const useSimulateWeth9 = /*#__PURE__*/ createUseSimulateContract({
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link weth9Abi}__ and `functionName` set to `"approve"`
  *
- * [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Op Mainnet Optimism Explorer__](https://optimistic.etherscan.io/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Base Basescan__](https://basescan.org/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Arbitrum One Arbiscan__](https://arbiscan.io/address/0x82aF49447D8a07e3bd95BD0d56f35241523fBab1)
+ * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14)
  */
 export const useSimulateWeth9Approve = /*#__PURE__*/ createUseSimulateContract({
   abi: weth9Abi,
@@ -347,7 +423,11 @@ export const useSimulateWeth9Approve = /*#__PURE__*/ createUseSimulateContract({
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link weth9Abi}__ and `functionName` set to `"transferFrom"`
  *
- * [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Op Mainnet Optimism Explorer__](https://optimistic.etherscan.io/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Base Basescan__](https://basescan.org/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Arbitrum One Arbiscan__](https://arbiscan.io/address/0x82aF49447D8a07e3bd95BD0d56f35241523fBab1)
+ * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14)
  */
 export const useSimulateWeth9TransferFrom =
   /*#__PURE__*/ createUseSimulateContract({
@@ -359,7 +439,11 @@ export const useSimulateWeth9TransferFrom =
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link weth9Abi}__ and `functionName` set to `"withdraw"`
  *
- * [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Op Mainnet Optimism Explorer__](https://optimistic.etherscan.io/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Base Basescan__](https://basescan.org/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Arbitrum One Arbiscan__](https://arbiscan.io/address/0x82aF49447D8a07e3bd95BD0d56f35241523fBab1)
+ * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14)
  */
 export const useSimulateWeth9Withdraw = /*#__PURE__*/ createUseSimulateContract(
   { abi: weth9Abi, address: weth9Address, functionName: 'withdraw' },
@@ -368,7 +452,11 @@ export const useSimulateWeth9Withdraw = /*#__PURE__*/ createUseSimulateContract(
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link weth9Abi}__ and `functionName` set to `"transfer"`
  *
- * [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Op Mainnet Optimism Explorer__](https://optimistic.etherscan.io/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Base Basescan__](https://basescan.org/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Arbitrum One Arbiscan__](https://arbiscan.io/address/0x82aF49447D8a07e3bd95BD0d56f35241523fBab1)
+ * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14)
  */
 export const useSimulateWeth9Transfer = /*#__PURE__*/ createUseSimulateContract(
   { abi: weth9Abi, address: weth9Address, functionName: 'transfer' },
@@ -377,7 +465,11 @@ export const useSimulateWeth9Transfer = /*#__PURE__*/ createUseSimulateContract(
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link weth9Abi}__ and `functionName` set to `"deposit"`
  *
- * [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Op Mainnet Optimism Explorer__](https://optimistic.etherscan.io/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Base Basescan__](https://basescan.org/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Arbitrum One Arbiscan__](https://arbiscan.io/address/0x82aF49447D8a07e3bd95BD0d56f35241523fBab1)
+ * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14)
  */
 export const useSimulateWeth9Deposit = /*#__PURE__*/ createUseSimulateContract({
   abi: weth9Abi,
@@ -388,7 +480,11 @@ export const useSimulateWeth9Deposit = /*#__PURE__*/ createUseSimulateContract({
 /**
  * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link weth9Abi}__
  *
- * [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Op Mainnet Optimism Explorer__](https://optimistic.etherscan.io/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Base Basescan__](https://basescan.org/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Arbitrum One Arbiscan__](https://arbiscan.io/address/0x82aF49447D8a07e3bd95BD0d56f35241523fBab1)
+ * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14)
  */
 export const useWatchWeth9Event = /*#__PURE__*/ createUseWatchContractEvent({
   abi: weth9Abi,
@@ -398,7 +494,11 @@ export const useWatchWeth9Event = /*#__PURE__*/ createUseWatchContractEvent({
 /**
  * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link weth9Abi}__ and `eventName` set to `"Approval"`
  *
- * [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Op Mainnet Optimism Explorer__](https://optimistic.etherscan.io/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Base Basescan__](https://basescan.org/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Arbitrum One Arbiscan__](https://arbiscan.io/address/0x82aF49447D8a07e3bd95BD0d56f35241523fBab1)
+ * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14)
  */
 export const useWatchWeth9ApprovalEvent =
   /*#__PURE__*/ createUseWatchContractEvent({
@@ -410,7 +510,11 @@ export const useWatchWeth9ApprovalEvent =
 /**
  * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link weth9Abi}__ and `eventName` set to `"Transfer"`
  *
- * [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Op Mainnet Optimism Explorer__](https://optimistic.etherscan.io/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Base Basescan__](https://basescan.org/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Arbitrum One Arbiscan__](https://arbiscan.io/address/0x82aF49447D8a07e3bd95BD0d56f35241523fBab1)
+ * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14)
  */
 export const useWatchWeth9TransferEvent =
   /*#__PURE__*/ createUseWatchContractEvent({
@@ -422,7 +526,11 @@ export const useWatchWeth9TransferEvent =
 /**
  * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link weth9Abi}__ and `eventName` set to `"Deposit"`
  *
- * [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Op Mainnet Optimism Explorer__](https://optimistic.etherscan.io/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Base Basescan__](https://basescan.org/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Arbitrum One Arbiscan__](https://arbiscan.io/address/0x82aF49447D8a07e3bd95BD0d56f35241523fBab1)
+ * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14)
  */
 export const useWatchWeth9DepositEvent =
   /*#__PURE__*/ createUseWatchContractEvent({
@@ -434,7 +542,11 @@ export const useWatchWeth9DepositEvent =
 /**
  * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link weth9Abi}__ and `eventName` set to `"Withdrawal"`
  *
- * [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Ethereum Etherscan__](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+ * - [__View Contract on Op Mainnet Optimism Explorer__](https://optimistic.etherscan.io/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Base Basescan__](https://basescan.org/address/0x4200000000000000000000000000000000000006)
+ * - [__View Contract on Arbitrum One Arbiscan__](https://arbiscan.io/address/0x82aF49447D8a07e3bd95BD0d56f35241523fBab1)
+ * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14)
  */
 export const useWatchWeth9WithdrawalEvent =
   /*#__PURE__*/ createUseWatchContractEvent({
