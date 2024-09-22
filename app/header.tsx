@@ -14,7 +14,7 @@ export default function Header() {
       <div className="flex w-full justify-between">
         <Image src={wethImg} alt="WETH" className="h-8 w-8" />
         <div className="flex items-center justify-center gap-5">
-          <ConnectButton />
+          <ConnectButton chainStatus={'icon'} showBalance={false} />
           <div className="hidden lg:block">
             <ModeToggle />
           </div>
