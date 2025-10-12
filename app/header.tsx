@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <header
       id="header"
-      className="sticky top-0 z-20 flex h-16 w-full items-center border-b px-5"
+      className="sticky top-0 z-20 flex h-16 w-full flex-shrink-0 items-center border-b px-5"
     >
       <div className="flex w-full justify-between">
         <Image src={wethImg} alt="WETH" className="h-8 w-8" />
