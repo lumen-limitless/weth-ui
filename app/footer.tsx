@@ -12,7 +12,7 @@ export default function Footer() {
   return (
     <footer
       id="footer"
-      className="flex flex-shrink-0 flex-col items-center justify-center gap-5 border-t p-1 px-5 lg:flex-row"
+      className="flex shrink-0 flex-col items-center justify-center gap-5 border-t p-1 px-5 lg:flex-row"
     >
       <div className="flex">
         <Box className="mr-1" />{' '}
