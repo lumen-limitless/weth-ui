@@ -1,10 +1,10 @@
 'use client';
 
-import { ModeToggle } from '@/components/mode-toggle';
 import { Skeleton } from '@/components/ui/skeleton';
 import { Box, Fuel } from 'lucide-react';
 import { formatGwei } from 'viem';
 import { useBlockNumber, useGasPrice } from 'wagmi';
+
 export default function Footer() {
   const { data: blockNumber } = useBlockNumber({ watch: true });
   const { data: feeData } = useGasPrice();
@@ -12,7 +12,7 @@ export default function Footer() {
   return (
     <footer
       id="footer"
-      className="flex shrink-0 flex-col items-center justify-center gap-5 border-t p-1 px-5 lg:flex-row"
+      className="flex shrink-0 flex-col items-center justify-center gap-5 px-5 py-3 lg:flex-row"
     >
       <div className="flex">
         <Box className="mr-1" />{' '}
@@ -26,7 +26,6 @@ export default function Footer() {
           <Skeleton className="h-6 w-16" />
         )}
       </div>
-      <ModeToggle />
     </footer>
   );
 }

@@ -3,7 +3,6 @@ import './globals.css';
 
 import Footer from '@/app/footer';
 import Header from '@/app/header';
-import Main from '@/app/main';
 import { cn } from '@/lib/utils';
 import { Viewport } from 'next';
 import { Kode_Mono } from 'next/font/google';
@@ -43,14 +42,11 @@ export default function RootLayout({
         style={{
           textRendering: 'optimizeLegibility',
         }}
-        className={cn(
-          kodemono.className,
-          'flex min-h-screen touch-manipulation flex-col antialiased',
-        )}
+        className={cn(kodemono.className)}
       >
         <a
           href="#main"
-          className="sr-only absolute left-[-999px] top-[-999px] block border bg-[#ffc] text-black focus:not-sr-only focus:bottom-0 focus:top-0 focus:border-[#990000]"
+          className="sr-only absolute top-[-999px] left-[-999px] block border bg-[#ffc] text-black focus:not-sr-only focus:top-0 focus:bottom-0 focus:border-[#990000]"
           aria-label="skip"
           id="skip"
         >
@@ -58,11 +54,15 @@ export default function RootLayout({
         </a>
 
         <Providers>
-          <Header />
+          <div className="flex min-h-screen touch-manipulation flex-col antialiased">
+            <Header />
 
-          <Main>{children}</Main>
+            <main id="main" className="grow">
+              {children}
+            </main>
 
-          <Footer />
+            <Footer />
+          </div>
         </Providers>
         <TailwindIndicator />
       </body>
