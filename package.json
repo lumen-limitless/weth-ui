@@ -17,6 +17,21 @@
     "test:unit": "jest",
     "typecheck": "tsc --noEmit"
   },
+  "prettier": {
+    "plugins": [
+      "prettier-plugin-organize-imports",
+      "prettier-plugin-packagejson",
+      "prettier-plugin-tailwindcss"
+    ],
+    "singleQuote": true,
+    "tabWidth": 2,
+    "tailwindFunctions": [
+      "clsx",
+      "cn",
+      "cva"
+    ],
+    "useTabs": false
+  },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
     "@radix-ui/react-accordion": "^1.2.12",

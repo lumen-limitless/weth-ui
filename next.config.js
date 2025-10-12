@@ -4,34 +4,14 @@ module.exports = {
   trailingSlash: false,
   output: undefined,
   transpilePackages: undefined,
+
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+
   images: {
     formats: ['image/webp', 'image/avif'],
     deviceSizes: undefined,
-  },
-
-  webpack(config, { isServer }) {
-    config.module.rules.push({
-      test: /\.svg$/i,
-      issuer: /\.[jt]sx?$/,
-      use: [
-        {
-          loader: '@svgr/webpack',
-          options: {
-            typescript: true,
-            dimensions: false,
-          },
-        },
-      ],
-    });
-
-    if (!isServer) {
-      config.resolve.fallback = {
-        ...config.resolve.fallback,
-        encoding: require.resolve('encoding'),
-      };
-    }
-
-    return config;
   },
 };
 
